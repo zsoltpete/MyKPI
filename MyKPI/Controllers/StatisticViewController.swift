@@ -12,15 +12,28 @@ import Charts
 class StatisticViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var chartView: BarChartView!
+    var results: [Result]? = [Result]()
+    var answers: [Int]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let decoded = UserDefaults.standard.object(forKey: "Results") as? Data {
+            self.results = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as? [Result]
+        }
         
+        
+        self.initChartView()
+    }
+    
+    func initChartView(){
         chartView.delegate = self;
         
         chartView.drawBarShadowEnabled = false;
         chartView.drawValueAboveBarEnabled = true;
         
         chartView.maxVisibleCount = 60;
+        chartView.tintColor = UIColor.red
+        
         
         let xAxis: XAxis = chartView.xAxis;
         xAxis.labelPosition = .bottom;
@@ -54,19 +67,23 @@ class StatisticViewController: UIViewController, ChartViewDelegate {
         let marker: MarkerView = MarkerView()
         marker.chartView = chartView;
         chartView.marker = marker;
-        self.setData(count: 1, range: 1)
+        self.setData(count: (self.results?.count)!, range: 10)
     }
     
     func setData(count: Int, range: Double){
-        let start: Double = 1.0;
+        let start: Int = 0;
         
         var yVals = [BarChartDataEntry]()
         var loopCounter = start
-        while loopCounter <= start+Double(count+1)
+        while loopCounter < (self.results?.count)!
         {
             var mult: Double = (range + 1)
-            var val: Double = (Double) (arc4random_uniform(UInt32(mult)))
-            yVals.append(BarChartDataEntry(x: Double(loopCounter), y: val))
+            let actualAnswer: String = (self.results?[loopCounter].answers)!
+            let answerElementsString: [String] = actualAnswer.components(separatedBy: ",")
+            var val: Double = (Double)(answerElementsString[Int(0)])!
+            var barChart: BarChartDataEntry = BarChartDataEntry(x: Double(loopCounter), y: val)
+            yVals.append(barChart)
+            
             loopCounter=loopCounter+1
         }
         
@@ -79,10 +96,11 @@ class StatisticViewController: UIViewController, ChartViewDelegate {
         }
         else{
             set1 = BarChartDataSet()
+            set1?.setColor(NSUIColor.red)
             set1?.label = "The year 2017"
             set1?.values = yVals
             set1?.setColor(ChartColorTemplates.colorFromString("111,111,111"))
-            
+            set1?.colors = [UIColor.red, UIColor.green]
             var dataSets = [BarChartDataSet]()
             dataSets.append(set1!)
             
@@ -90,7 +108,6 @@ class StatisticViewController: UIViewController, ChartViewDelegate {
             data.dataSets = dataSets
             
             data.barWidth = 0.9;
-            
             chartView.data = data;
         }
     }
