@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ActionCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FSCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MyKPI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1CD80321715FDB12A3A31B7BCB09EA28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>299BAE154D198361CE5FEF7B83BE9780</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86757E316D99D037A11E78DFB65E516E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5A2DB7A84B7B78E359870D2E1B24AA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
