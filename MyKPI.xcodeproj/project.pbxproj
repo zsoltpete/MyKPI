@@ -24,6 +24,7 @@
 		9A54D8951E4101C0008D2C42 /* HistoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A54D8941E4101C0008D2C42 /* HistoryItemCell.swift */; };
 		9A54D8971E41087E008D2C42 /* AnswersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A54D8961E41087E008D2C42 /* AnswersCell.swift */; };
 		9A54D8991E4108ED008D2C42 /* AnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A54D8981E4108ED008D2C42 /* AnswersViewController.swift */; };
+		9A54D89B1E411F0C008D2C42 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A54D89A1E411F0C008D2C42 /* StatisticViewController.swift */; };
 		9A7643E81E3E037700E16A01 /* HistorySectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7643E71E3E037700E16A01 /* HistorySectionHeaderCell.swift */; };
 		9A7643EB1E3E076500E16A01 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7643EA1E3E076500E16A01 /* ShareButton.swift */; };
 		9A7643ED1E3E094700E16A01 /* UIViewController+CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7643EC1E3E094700E16A01 /* UIViewController+CSV.swift */; };
@@ -60,6 +61,7 @@
 		9A54D8941E4101C0008D2C42 /* HistoryItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryItemCell.swift; path = Views/HistoryItemCell.swift; sourceTree = "<group>"; };
 		9A54D8961E41087E008D2C42 /* AnswersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswersCell.swift; path = Views/AnswersCell.swift; sourceTree = "<group>"; };
 		9A54D8981E4108ED008D2C42 /* AnswersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswersViewController.swift; path = Controllers/AnswersViewController.swift; sourceTree = "<group>"; };
+		9A54D89A1E411F0C008D2C42 /* StatisticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatisticViewController.swift; path = Controllers/StatisticViewController.swift; sourceTree = "<group>"; };
 		9A7643E71E3E037700E16A01 /* HistorySectionHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistorySectionHeaderCell.swift; path = Views/HistorySectionHeaderCell.swift; sourceTree = "<group>"; };
 		9A7643EA1E3E076500E16A01 /* ShareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareButton.swift; path = Views/ShareButton.swift; sourceTree = "<group>"; };
 		9A7643EC1E3E094700E16A01 /* UIViewController+CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+CSV.swift"; path = "Utilities/UIViewController+CSV.swift"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				9A3D6C261E3D0EA200DEB30E /* NewQuestionViewController.swift */,
 				9A04976D1E3FCA9E003C9E1F /* TimePickerViewController.swift */,
 				9A54D8981E4108ED008D2C42 /* AnswersViewController.swift */,
+				9A54D89A1E411F0C008D2C42 /* StatisticViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				9A54D8971E41087E008D2C42 /* AnswersCell.swift in Sources */,
 				9A8725571E3CAE22009A4CFE /* EditQuestionsViewController.swift in Sources */,
 				9A8725481E3C8AD4009A4CFE /* Constants.swift in Sources */,
+				9A54D89B1E411F0C008D2C42 /* StatisticViewController.swift in Sources */,
 				9A3D6C251E3D0DB300DEB30E /* NewQuestionTypeCell.swift in Sources */,
 				9A04976E1E3FCA9E003C9E1F /* TimePickerViewController.swift in Sources */,
 				9A7643EB1E3E076500E16A01 /* ShareButton.swift in Sources */,

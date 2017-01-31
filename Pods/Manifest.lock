@@ -1,18 +1,23 @@
 PODS:
   - ActionCell (2.0.8)
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
   - FSCalendar (2.7.0)
   - MGSwipeTableCell (1.5.6)
 
 DEPENDENCIES:
   - ActionCell (~> 2.0.0)
+  - Charts
   - FSCalendar
   - MGSwipeTableCell
 
 SPEC CHECKSUMS:
   ActionCell: 84e2964bcfa756b22983edf05662c82deb67749d
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
   FSCalendar: 4957703ebd99b4fd0bfd46bf3e3c6465c0a25482
   MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
 
-PODFILE CHECKSUM: f8ac0666761bd303be185f12a647a258a7e76b5a
+PODFILE CHECKSUM: 0ca02036919a1e62a555017a87b74c3aaaa222cb
 
 COCOAPODS: 1.1.1

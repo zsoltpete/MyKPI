@@ -451,6 +451,7 @@
                     <connections>
                         <segue destination="vNK-7f-FLK" kind="relationship" relationship="viewControllers" id="f1f-b6-NEw"/>
                         <segue destination="mMm-qM-vCW" kind="relationship" relationship="viewControllers" id="qKj-NM-KiF"/>
+                        <segue destination="yFQ-9l-c1e" kind="relationship" relationship="viewControllers" id="1AY-iL-Mfg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvc-qj-Iex" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -790,6 +791,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpb-Bt-eWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="950" y="821"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Qnl-uF-JgA">
+            <objects>
+                <navigationController id="yFQ-9l-c1e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="T9Q-ua-pCi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lLi-tX-pRM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qS9-fu-wir" kind="relationship" relationship="rootViewController" id="Hf7-DZ-FQH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DgS-L4-Qil" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="1600"/>
+        </scene>
+        <!--Statistic View Controller-->
+        <scene sceneID="ucY-dm-Knj">
+            <objects>
+                <viewController id="qS9-fu-wir" customClass="StatisticViewController" customModule="MyKPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sv0-xs-bJM"/>
+                        <viewControllerLayoutGuide type="bottom" id="hqA-8l-u25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbR-nS-nEP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kAH-lh-sKr" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kAH-lh-sKr" firstAttribute="width" secondItem="QbR-nS-nEP" secondAttribute="width" id="Eg4-UE-4DD"/>
+                            <constraint firstItem="kAH-lh-sKr" firstAttribute="centerX" secondItem="QbR-nS-nEP" secondAttribute="centerX" id="fMn-4P-Ggr"/>
+                            <constraint firstItem="kAH-lh-sKr" firstAttribute="height" secondItem="QbR-nS-nEP" secondAttribute="height" id="pZi-mv-bnH"/>
+                            <constraint firstItem="kAH-lh-sKr" firstAttribute="centerY" secondItem="QbR-nS-nEP" secondAttribute="centerY" id="sTm-0F-QVy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q9g-L2-Wgq"/>
+                    <connections>
+                        <outlet property="chartView" destination="kAH-lh-sKr" id="Ack-N3-WtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRK-kk-Dud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="1600"/>
         </scene>
     </scenes>
     <resources>
