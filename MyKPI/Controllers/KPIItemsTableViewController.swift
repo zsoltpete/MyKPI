@@ -26,6 +26,7 @@ class KPIItemsTableViewController: UITableViewController, MGSwipeTableCellDelega
             self.rows = count
         }
         NotificationCenter.default.addObserver(self, selector: #selector(addTimeAnswer), name: NSNotification.Name(rawValue: Constants.Events.AddTimeAnswerEvent), object: nil)
+        self.view.backgroundColor = UIColor.flatSkyBlue
     }
     
     override func viewWillAppear(_ animated: Bool) {

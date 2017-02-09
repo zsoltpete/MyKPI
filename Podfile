@@ -6,5 +6,7 @@ target 'MyKPI' do
     pod 'MGSwipeTableCell'
     pod 'FSCalendar'
     pod 'Charts'
+    pod 'ChameleonFramework/Swift'
+    pod 'Onboard'
 
 end

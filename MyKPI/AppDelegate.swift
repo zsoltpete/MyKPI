@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(true, forKey: "FirstRun")
             UserDefaults.standard.synchronize()
         }
+        
         return true
     }
 

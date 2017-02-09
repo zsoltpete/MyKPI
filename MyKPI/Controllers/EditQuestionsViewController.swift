@@ -24,7 +24,7 @@ class EditQuestionsViewController: UITableViewController, MGSwipeTableCellDelega
         let addButtonItem : UIBarButtonItem = UIBarButtonItem(customView: addButton)
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.navigationItem.setRightBarButton(addButtonItem, animated: true)
-        
+        self.view.backgroundColor = UIColor.flatSkyBlue
         
     }
     
@@ -63,6 +63,7 @@ class EditQuestionsViewController: UITableViewController, MGSwipeTableCellDelega
         cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: UIColor.red)]
         cell.rightSwipeSettings.transition = MGSwipeTransition.rotate3D
         cell.delegate = self
+        cell.backgroundColor = UIColor.flatSkyBlue
         return cell
     }
     

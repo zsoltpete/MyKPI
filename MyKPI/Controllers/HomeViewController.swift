@@ -8,12 +8,13 @@
 
 import UIKit
 import MGSwipeTableCell
+import ChameleonFramework
 
 class HomeViewController: UITableViewController, ShareProtocol,  FSCalendarDataSource, FSCalendarDelegate, MGSwipeTableCellDelegate{
 
     
     
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButton: BaseButton!
     
     
     @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
@@ -24,6 +25,8 @@ class HomeViewController: UITableViewController, ShareProtocol,  FSCalendarDataS
     var results: [Result]? = [Result]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.startButton.initWith(text: "Start KPI")
+        self.view.layoutIfNeeded()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         if let decoded = UserDefaults.standard.object(forKey: "BaseQuestions") as? Data {
@@ -33,6 +36,8 @@ class HomeViewController: UITableViewController, ShareProtocol,  FSCalendarDataS
         }
 
         calendarView.setScope(.week, animated: true)
+        calendarView.backgroundColor = UIColor.flatSkyBlue
+        self.view.backgroundColor = UIColor.flatSkyBlue
         
         
     }
@@ -98,6 +103,7 @@ class HomeViewController: UITableViewController, ShareProtocol,  FSCalendarDataS
         cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: UIColor.red)]
         cell.rightSwipeSettings.transition = MGSwipeTransition.rotate3D
         cell.delegate = self
+        cell.textLabel?.textColor = UIColor.white
         
         return cell
     }

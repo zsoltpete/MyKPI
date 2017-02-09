@@ -19,6 +19,9 @@ class Constants: NSObject {
         static var HistorySectionHeaderCell = "HistorySectionHeaderCell"
         static var BadSideCell = "BadSideCell"
         static var AnswersCell = "AnswersCell"
+        static var FeelingsStatisticCell = "FeelingsStatisticCell"
+        static var ScrumCell = "ScrumCell"
+        static var TimeStatisticCell = "TimeStatisticCell"
     }
     
     struct Segues {

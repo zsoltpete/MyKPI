@@ -17,7 +17,7 @@ class AnswersViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.flatSkyBlue
     }
 
     override func viewWillAppear(_ animated: Bool) {

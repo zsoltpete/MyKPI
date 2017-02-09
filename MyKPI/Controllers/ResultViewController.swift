@@ -12,6 +12,8 @@ class ResultViewController: UIViewController {
     
     var answers: String?
     
+    @IBOutlet weak var statisticButton: BaseButton!
+    @IBOutlet weak var sendButton: BaseButton!
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
@@ -35,6 +37,13 @@ class ResultViewController: UIViewController {
         UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: array), forKey: "Results")
         UserDefaults.standard.synchronize()
         
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor.flatSkyBlue
+        self.sendButton.initWith(text: "Gyors küldés")
+        self.statisticButton.initWith(text: "Statisztika")
     }
     @IBAction func close(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

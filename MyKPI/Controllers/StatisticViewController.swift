@@ -7,109 +7,58 @@
 //
 
 import UIKit
-import Charts
 
-class StatisticViewController: UIViewController, ChartViewDelegate {
+
+class StatisticViewController: UITableViewController {
     
-    @IBOutlet weak var chartView: BarChartView!
     var results: [Result]? = [Result]()
     var answers: [Int]?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let decoded = UserDefaults.standard.object(forKey: "Results") as? Data {
             self.results = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as? [Result]
         }
-        
-        
-        self.initChartView()
+        self.view.backgroundColor = UIColor.flatSkyBlue
     }
     
-    func initChartView(){
-        chartView.delegate = self;
-        
-        chartView.drawBarShadowEnabled = false;
-        chartView.drawValueAboveBarEnabled = true;
-        
-        chartView.maxVisibleCount = 60;
-        chartView.tintColor = UIColor.red
-        
-        
-        let xAxis: XAxis = chartView.xAxis;
-        xAxis.labelPosition = .bottom;
-        xAxis.drawGridLinesEnabled = false;
-        xAxis.granularity = 1.0; // only intervals of 1 day
-        xAxis.labelCount = 7;
-        
-        let leftAxis: YAxis = chartView.leftAxis;
-        leftAxis.labelCount = 8;
-        leftAxis.labelPosition =  .outsideChart
-        leftAxis.spaceTop = 0.15;
-        leftAxis.axisMinimum = 0.0; // this replaces startAtZero = YES
-        
-        let rightAxis: YAxis = chartView.rightAxis;
-        rightAxis.enabled = true;
-        rightAxis.drawGridLinesEnabled = false;
-        rightAxis.labelCount = 8;
-        rightAxis.valueFormatter = leftAxis.valueFormatter;
-        rightAxis.spaceTop = 0.15;
-        rightAxis.axisMinimum = 0.0; // this replaces startAtZero = YES
-        
-        let l: Legend = chartView.legend;
-        l.horizontalAlignment = .left;
-        l.verticalAlignment = .bottom;
-        l.orientation = .horizontal;
-        l.drawInside = false;
-        l.form = .square;
-        l.formSize = 9.0;
-        l.xEntrySpace = 4.0;
-        
-        let marker: MarkerView = MarkerView()
-        marker.chartView = chartView;
-        chartView.marker = marker;
-        self.setData(count: (self.results?.count)!, range: 10)
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    func setData(count: Int, range: Double){
-        let start: Int = 0;
-        
-        var yVals = [BarChartDataEntry]()
-        var loopCounter = start
-        while loopCounter < (self.results?.count)!
-        {
-            var mult: Double = (range + 1)
-            let actualAnswer: String = (self.results?[loopCounter].answers)!
-            let answerElementsString: [String] = actualAnswer.components(separatedBy: ",")
-            var val: Double = (Double)(answerElementsString[Int(0)])!
-            var barChart: BarChartDataEntry = BarChartDataEntry(x: Double(loopCounter), y: val)
-            yVals.append(barChart)
-            
-            loopCounter=loopCounter+1
-        }
-        
-        var set1:BarChartDataSet? = nil
-        if (chartView.data != nil){
-            set1 = chartView.data?.dataSets[0] as? BarChartDataSet
-            set1?.values = yVals;
-            chartView.data?.notifyDataChanged()
-            chartView.notifyDataSetChanged()
-        }
-        else{
-            set1 = BarChartDataSet()
-            set1?.setColor(NSUIColor.red)
-            set1?.label = "The year 2017"
-            set1?.values = yVals
-            set1?.setColor(ChartColorTemplates.colorFromString("111,111,111"))
-            set1?.colors = [UIColor.red, UIColor.green]
-            var dataSets = [BarChartDataSet]()
-            dataSets.append(set1!)
-            
-            var data:BarChartData = BarChartData()
-            data.dataSets = dataSets
-            
-            data.barWidth = 0.9;
-            chartView.data = data;
-        }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if(indexPath.row < 3){
+            let cell: FeelingsStatisticCell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.FeelingsStatisticCell, for: indexPath) as! FeelingsStatisticCell
+            
+            cell.setData(index: indexPath.row, range: 10, datas: self.results!)
+            
+            return cell
+        }else if (indexPath.row == 3){
+            let cell: ScrumCell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.ScrumCell, for: indexPath) as! ScrumCell
+            
+            cell.setData(index: 15, datas: self.results!)
+            
+            return cell
+        }else if(indexPath.row == 4 || indexPath.row == 5){
+            let cell: TimeStatisticCell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.TimeStatisticCell, for: indexPath) as! TimeStatisticCell
+            
+            cell.setData(index: 9, datas: self.results!)
+            
+            return cell
+        }
+        
+        return UITableViewCell()
+        
+        
+    }
+    
+   
+    
+
     
 }

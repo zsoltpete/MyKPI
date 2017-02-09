@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Charts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Onboard.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MyKPI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EA9796459E4FBDA904AD98D9C955F80</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1CD80321715FDB12A3A31B7BCB09EA28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>20AA70E62FD548A12331CA975A3EE2B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>299BAE154D198361CE5FEF7B83BE9780</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76BD4592010354D6C23D6ECCA20D83A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F5682E0AC126B1910FC04BA8A16F382</key>
 		<dict>
 			<key>primary</key>
 			<true/>

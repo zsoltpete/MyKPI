@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		808D692ABDFBA9DCE233A7ED /* Pods_MyKPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FFC57686DCA166379ED5BA /* Pods_MyKPI.framework */; };
 		9A04976E1E3FCA9E003C9E1F /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04976D1E3FCA9E003C9E1F /* TimePickerViewController.swift */; };
+		9A17A8031E427BA50026B6E1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17A8021E427BA50026B6E1 /* BaseTabBarController.swift */; };
+		9A17A8051E427F9E0026B6E1 /* FeelingsStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17A8041E427F9E0026B6E1 /* FeelingsStatisticCell.swift */; };
 		9A3D6C1C1E3CB6A400DEB30E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A3D6C1E1E3CB6A400DEB30E /* Localizable.strings */; };
 		9A3D6C231E3D0D8900DEB30E /* NewQuestionTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D6C221E3D0D8900DEB30E /* NewQuestionTitleCell.swift */; };
 		9A3D6C251E3D0DB300DEB30E /* NewQuestionTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D6C241E3D0DB300DEB30E /* NewQuestionTypeCell.swift */; };
@@ -36,6 +38,9 @@
 		9A8725521E3CA8D7009A4CFE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8725511E3CA8D7009A4CFE /* Question.swift */; };
 		9A8725571E3CAE22009A4CFE /* EditQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8725561E3CAE22009A4CFE /* EditQuestionsViewController.swift */; };
 		9A8725591E3CAE6B009A4CFE /* EditQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8725581E3CAE6B009A4CFE /* EditQuestionCell.swift */; };
+		9A8A8C441E45D0B4000B6272 /* ScrumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A8C431E45D0B4000B6272 /* ScrumCell.swift */; };
+		9A8A8C461E45F00D000B6272 /* TimeStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A8C451E45F00D000B6272 /* TimeStatisticCell.swift */; };
+		9A8A8C481E46072C000B6272 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A8C471E46072C000B6272 /* BaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,8 @@
 		5F7CCCE755C5E9CB85F96BDA /* Pods-MyKPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyKPI/Pods-MyKPI.release.xcconfig"; sourceTree = "<group>"; };
 		9A04976D1E3FCA9E003C9E1F /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimePickerViewController.swift; path = Controllers/TimePickerViewController.swift; sourceTree = "<group>"; };
 		9A0497701E3FE42E003C9E1F /* Calendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calendar-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		9A17A8021E427BA50026B6E1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTabBarController.swift; path = Controllers/BaseTabBarController.swift; sourceTree = "<group>"; };
+		9A17A8041E427F9E0026B6E1 /* FeelingsStatisticCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeelingsStatisticCell.swift; path = Views/FeelingsStatisticCell.swift; sourceTree = "<group>"; };
 		9A3D6C1D1E3CB6A400DEB30E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A3D6C1F1E3CB6BF00DEB30E /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A3D6C221E3D0D8900DEB30E /* NewQuestionTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewQuestionTitleCell.swift; path = Views/NewQuestionTitleCell.swift; sourceTree = "<group>"; };
@@ -73,6 +80,9 @@
 		9A8725511E3CA8D7009A4CFE /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
 		9A8725561E3CAE22009A4CFE /* EditQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditQuestionsViewController.swift; path = Controllers/EditQuestionsViewController.swift; sourceTree = "<group>"; };
 		9A8725581E3CAE6B009A4CFE /* EditQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditQuestionCell.swift; path = Views/EditQuestionCell.swift; sourceTree = "<group>"; };
+		9A8A8C431E45D0B4000B6272 /* ScrumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrumCell.swift; path = Views/ScrumCell.swift; sourceTree = "<group>"; };
+		9A8A8C451E45F00D000B6272 /* TimeStatisticCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeStatisticCell.swift; path = Views/TimeStatisticCell.swift; sourceTree = "<group>"; };
+		9A8A8C471E46072C000B6272 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseButton.swift; path = Views/BaseButton.swift; sourceTree = "<group>"; };
 		CB4417ECA3CF5CC19EA01E99 /* Pods-MyKPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyKPI/Pods-MyKPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +155,7 @@
 				9A04976D1E3FCA9E003C9E1F /* TimePickerViewController.swift */,
 				9A54D8981E4108ED008D2C42 /* AnswersViewController.swift */,
 				9A54D89A1E411F0C008D2C42 /* StatisticViewController.swift */,
+				9A17A8021E427BA50026B6E1 /* BaseTabBarController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7643EA1E3E076500E16A01 /* ShareButton.swift */,
+				9A8A8C471E46072C000B6272 /* BaseButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -194,6 +206,9 @@
 				9A54106E1E3FBBD200749504 /* BadSideCell.swift */,
 				9A54D8941E4101C0008D2C42 /* HistoryItemCell.swift */,
 				9A54D8961E41087E008D2C42 /* AnswersCell.swift */,
+				9A17A8041E427F9E0026B6E1 /* FeelingsStatisticCell.swift */,
+				9A8A8C431E45D0B4000B6272 /* ScrumCell.swift */,
+				9A8A8C451E45F00D000B6272 /* TimeStatisticCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -259,7 +274,7 @@
 				TargetAttributes = {
 					9A45B8B31E3BC55C00833C6E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AFEL4SQNP4;
+						DevelopmentTeam = MSLJP987H9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -355,10 +370,13 @@
 				9A8725421E3C8A65009A4CFE /* HomeViewController.swift in Sources */,
 				9A54106F1E3FBBD200749504 /* BadSideCell.swift in Sources */,
 				9A45B8BA1E3BC55C00833C6E /* ViewController.swift in Sources */,
+				9A17A8051E427F9E0026B6E1 /* FeelingsStatisticCell.swift in Sources */,
 				9A45B8B81E3BC55C00833C6E /* AppDelegate.swift in Sources */,
 				9A8725591E3CAE6B009A4CFE /* EditQuestionCell.swift in Sources */,
 				9A3D6C231E3D0D8900DEB30E /* NewQuestionTitleCell.swift in Sources */,
+				9A8A8C461E45F00D000B6272 /* TimeStatisticCell.swift in Sources */,
 				9A7643E81E3E037700E16A01 /* HistorySectionHeaderCell.swift in Sources */,
+				9A17A8031E427BA50026B6E1 /* BaseTabBarController.swift in Sources */,
 				9A54D8991E4108ED008D2C42 /* AnswersViewController.swift in Sources */,
 				9A87254C1E3C9392009A4CFE /* KPIQuestionCell.swift in Sources */,
 				9A8725521E3CA8D7009A4CFE /* Question.swift in Sources */,
@@ -366,7 +384,9 @@
 				9A8725571E3CAE22009A4CFE /* EditQuestionsViewController.swift in Sources */,
 				9A8725481E3C8AD4009A4CFE /* Constants.swift in Sources */,
 				9A54D89B1E411F0C008D2C42 /* StatisticViewController.swift in Sources */,
+				9A8A8C481E46072C000B6272 /* BaseButton.swift in Sources */,
 				9A3D6C251E3D0DB300DEB30E /* NewQuestionTypeCell.swift in Sources */,
+				9A8A8C441E45D0B4000B6272 /* ScrumCell.swift in Sources */,
 				9A04976E1E3FCA9E003C9E1F /* TimePickerViewController.swift in Sources */,
 				9A7643EB1E3E076500E16A01 /* ShareButton.swift in Sources */,
 				9A45B8CB1E3BCA9C00833C6E /* KPIItemsTableViewController.swift in Sources */,
@@ -430,6 +450,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -481,6 +502,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -508,12 +530,15 @@
 			baseConfigurationReference = CB4417ECA3CF5CC19EA01E99 /* Pods-MyKPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AFEL4SQNP4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MSLJP987H9;
 				INFOPLIST_FILE = MyKPI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.petez.MyKPI;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.codeyard.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Calendar-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -524,12 +549,15 @@
 			baseConfigurationReference = 5F7CCCE755C5E9CB85F96BDA /* Pods-MyKPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AFEL4SQNP4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MSLJP987H9;
 				INFOPLIST_FILE = MyKPI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.petez.MyKPI;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.codeyard.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Calendar-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

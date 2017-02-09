@@ -13,11 +13,15 @@ class TimePickerViewController: UIViewController {
     var question: String?
 
     
+    @IBOutlet weak var closeButton: BaseButton!
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var pickerView: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.flatSkyBlue
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat =  "HH:mm"
         
@@ -25,7 +29,8 @@ class TimePickerViewController: UIViewController {
         
         self.pickerView.date = date!
         self.questionLabel.text = self.question
-        
+        self.closeButton.initWith(text: "Rendben")
+        self.pickerView.setValue(UIColor.white, forKey: "textColor")
     }
     
     @IBAction func close(_ sender: Any) {

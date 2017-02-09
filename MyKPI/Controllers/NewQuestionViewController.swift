@@ -10,11 +10,13 @@ import UIKit
 
 class NewQuestionViewController: UITableViewController {
 
+    @IBOutlet weak var addButton: BaseButton!
     var sendedQuestion: Question?
     var array: [Question] = [Question]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.flatSkyBlue
+        self.addButton.initWith(text: "Hozzáad")
         
     }
     
